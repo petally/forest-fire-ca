@@ -38,6 +38,11 @@ function countIgnitedNeighbors(grid, row, column, type) {
 }
 
 let insertCurrentGenerationData = () => {
+  // Quick and dirty way to prevent memory leakage
+  if (current_steps > 1500) {
+    return;
+  }
+
   let totalVeg = 0;
   let vegDensity = 0;
   let ignitedCells = 0;
