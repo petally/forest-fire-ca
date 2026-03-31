@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forest Fire Cellular Automaton</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Forest fire cellular automaton</h1>
+  <canvas id="canvas"></canvas>
+  <p id="current-steps">Generation: </p>
+  <button id="pause-button">Pause simulation</button>
+  <button id="advance-button">Advance simulation by 1 generation</button>
+  <button id="value-display-button">Enable value display</button>
+  <button id="fill-screen-button">Fill grid with vegetation</button>
+  <button id="gen-world-button">Generate world</button>
+  <button id="download-data-button">Download simulation data</button>
+  <p><em>Modes</em></p>
+  <p id="current-mode">Mode: placing</p>
+  <button id="erase-mode">Erase</button>
+  <button id="place-mode">Place</button>
+  <button id="fire-mode">Fire</button>
+  <script src="perlin.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
